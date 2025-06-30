@@ -9,3 +9,5 @@ COMPANY Washington University, St. Louis, Missouri
 DATE May 20, 1970
 
 SOURCE LANGUAGE PAL III
+
+![Screenshot](icbm.png)
