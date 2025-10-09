@@ -155,6 +155,7 @@ def parse(line, store=foo):
                 print(f"pagified {value:04o}")
             return store(value)
         else:
+            return store(0)
             return undefined(symbol)
     raise Exception(f"Syntax error: {line}")
 
@@ -165,7 +166,6 @@ if __name__ == "__main__":
     labels["."] = 0
     undefined = zero
     image = None
-    labels = {}
     with open(sys.argv[1]) as f:
         for line in f:
             pagify = False
